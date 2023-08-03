@@ -1,0 +1,32 @@
+:root {
+    /* Extra small devices (portrait phones, less than 576px) */
+    --breakpoint-xs: 0;
+
+    /* Small devices (landscape phones, 576px and up) */
+    --breakpoint-sm: 576px;
+
+    /* Medium devices (tablets, 768px and up) */
+    --breakpoint-md: 768px;
+
+    /* Large devices (desktops, 992px and up) */
+    --breakpoint-lg: 992px;
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    --breakpoint-xl: 1200px;
+}
+
+@media (min-width: var(--breakpoint-sm)) {
+    /* Small device styles go here */
+}
+
+@media (min-width: var(--breakpoint-md)) {
+    /* Medium device styles go here */
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+    /* Large device styles go here */
+}
+
+@media (min-width: var(--breakpoint-xl)) {
+    /* Extra large device styles go here */
+}

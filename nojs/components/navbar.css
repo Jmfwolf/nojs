@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #f8f9fa;
+}
+
+.navbar__brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 1em;
+}
+
+.navbar__link {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}

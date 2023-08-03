@@ -1,0 +1,35 @@
+/* Light theme styles */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #1a1a1a;
+    --color-primary: #6200ee;
+    --color-secondary: #018786;
+    --color-error: #b00020;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}
+
+.card {
+    background-color: #f1f1f1;
+    color: var(--color-text);
+}
+
+.error-message {
+    color: var(--color-error);
+}

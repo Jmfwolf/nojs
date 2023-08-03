@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+    /* Your mobile-specific styles go here */
+  
+    .container {
+      width: 90%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .header {
+      padding: 10px 0;
+    }
+  
+    /* Add more mobile-specific styles */
+  }
+  

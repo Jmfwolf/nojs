@@ -1,0 +1,39 @@
+/* Embedded media (e.g., iframes from YouTube) */
+.embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed iframe,
+.embed object,
+.embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Video and Audio elements */
+video,
+audio {
+    width: 100%;
+    display: block;
+}
+
+/* Custom styles for HTML5 video controls */
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel-container {
+    background-color: rgba(0,0,0,0.8); /* semi-transparent black */
+    color: white;
+}
+
+/* Custom styles for HTML5 audio controls */
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-panel-container {
+    background-color: rgba(0,0,0,0.8); /* semi-transparent black */
+    color: white;
+}

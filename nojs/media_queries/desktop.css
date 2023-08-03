@@ -1,0 +1,16 @@
+@media (min-width: 1024px) {
+    /* Your desktop-specific styles go here */
+  
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .header {
+      padding: 20px 0;
+    }
+  
+    /* Add more desktop-specific styles */
+  }
+  

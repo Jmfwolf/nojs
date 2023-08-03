@@ -1,0 +1,29 @@
+/* Full-width layout */
+.layout--full-width {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centered content layout */
+.layout--center {
+    max-width: 1200px; /* Or whatever width you want */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Sidebar layout */
+.layout--sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust this to your liking */
+}
+
+.layout--sidebar__main {
+    flex: 1 0 70%; /* Take up 70% of the container's width */
+}
+
+.layout--sidebar__aside {
+    flex: 1 0 30%; /* Take up 30% of the container's width */
+}

@@ -1,0 +1,35 @@
+/* Dark theme styles */
+:root {
+    --color-bg: #121212;
+    --color-text: #e0e0e0;
+    --color-primary: #bb86fc;
+    --color-secondary: #03dac6;
+    --color-error: #cf6679;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}
+
+.card {
+    background-color: #1f1f1f;
+    color: var(--color-text);
+}
+
+.error-message {
+    color: var(--color-error);
+}

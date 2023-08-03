@@ -1,0 +1,34 @@
+/* Color transition */
+.color-transition {
+    transition: color 0.3s ease-in-out;
+}
+
+/* Background color transition */
+.bg-color-transition {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Border color transition */
+.border-color-transition {
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Transform transition */
+.transform-transition {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Width transition */
+.width-transition {
+    transition: width 0.3s ease-in-out;
+}
+
+/* Height transition */
+.height-transition {
+    transition: height 0.3s ease-in-out;
+}
+
+/* All properties transition */
+.all-transition {
+    transition: all 0.3s ease-in-out;
+}

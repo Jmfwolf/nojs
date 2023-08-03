@@ -1,0 +1,32 @@
+.card {
+  background: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card__header {
+  background: var(--color-light-gray);
+  padding: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card__body {
+  padding: 15px;
+  line-height: 1.5;
+  color: var(--color-dark-gray);
+}
+
+.card__footer {
+  background: var(--color-light-gray);
+  padding: 15px;
+  text-align: right;
+}

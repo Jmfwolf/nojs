@@ -1,0 +1,83 @@
+/* Fade in animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Slide in from left animation */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation-name: slide-in-left;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Slide in from right animation */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Rotate animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+/* Scale up animation */
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale-up {
+    animation-name: scale-up;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}

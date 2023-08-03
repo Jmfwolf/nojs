@@ -1,0 +1,29 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid var(--color-light-gray);
+}
+
+.table th {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-gray);
+    font-weight: bold;
+}
+
+.table td {
+    color: var(--color-dark-gray);
+}
+
+.table-striped tr:nth-child(even) {
+    background-color: var(--color-off-white);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--color-light-gray);
+}

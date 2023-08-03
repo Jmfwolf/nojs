@@ -1,0 +1,42 @@
+/* To ensure images don't exceed their container's width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For responsive image grids, a common feature in modern websites */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-grid__item {
+    flex: 1 0 calc(33.333% - 2rem); /* 3-column grid with 1rem gap between */
+}
+
+/* Ensure the aspect ratio of images is maintained */
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* for 16:9 aspect ratio */
+}
+
+.aspect-ratio__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a border or shadow to images */
+.img-border {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.img-shadow {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

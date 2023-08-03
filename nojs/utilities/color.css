@@ -1,0 +1,44 @@
+/* Define colors for each theme */
+:root {
+    /* Light theme colors */
+    --color-bg-light: #ffffff;
+    --color-text-light: #000000;
+    --color-primary-light: #007bff;
+    --color-secondary-light: #6c757d;
+
+    /* Dark theme colors */
+    --color-bg-dark: #343a40;
+    --color-text-dark: #ffffff;
+    --color-primary-dark: #0d6efd;
+    --color-secondary-dark: #6c757d;
+}
+
+/* Define the default light theme */
+body {
+    --color-bg: var(--color-bg-light);
+    --color-text: var(--color-text-light);
+    --color-primary: var(--color-primary-light);
+    --color-secondary: var(--color-secondary-light);
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Define the dark theme when body has .theme-dark class */
+body.theme-dark {
+    --color-bg: var(--color-bg-dark);
+    --color-text: var(--color-text-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-secondary: var(--color-secondary-dark);
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Text color utilities */
+.text-primary { color: var(--color-primary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+
+/* Background color utilities */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
