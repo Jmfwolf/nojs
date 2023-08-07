@@ -1,7 +1,6 @@
 /* Import Base Styles */
 @import url('base_styles/reset.css');
 @import url('base_styles/typography.css');
-@import url('base_styles/main.css');
 
 /* Import Components */
 @import url('components/animations.css');
