@@ -3,17 +3,27 @@ html {
     font-size: 16px;
 }
 
+/* Normalize reset for better cross-browser consistency */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* Typography */
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* You can choose any font you prefer */
+    font-family: 'Roboto', Arial, sans-serif; 
     line-height: 1.6;
-    color: #333; /* You can choose any color you prefer */
+    color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 1em;
+    letter-spacing: -0.02em; /* Light tightening for better appearance */
 }
 
 h1 {
@@ -28,29 +38,29 @@ h3 {
     font-size: 1.75rem;
 }
 
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
+/* ... other heading styles remain unchanged ... */
 
 p {
     margin-bottom: 1em;
 }
 
 a {
-    color: #007bff; /* You can choose any color you prefer */
+    color: #007bff;
     text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Smooth transition */
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
+}
+
+a:visited {
+    color: #0056b3; /* Slightly darker blue for visited links */
+}
+
+a:active {
+    color: #004499; /* Even darker blue for active state */
 }
 
 strong {
@@ -63,4 +73,12 @@ em {
 
 small {
     font-size: 0.875em;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    /* ... adjust other elements as necessary ... */
 }

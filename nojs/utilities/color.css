@@ -1,4 +1,4 @@
-/* Define colors for each theme */
+/* Define global colors for each theme */
 :root {
     /* Light theme colors */
     --color-bg-light: #ffffff;
@@ -13,7 +13,7 @@
     --color-secondary-dark: #6c757d;
 }
 
-/* Define the default light theme */
+/* Default light theme */
 body {
     --color-bg: var(--color-bg-light);
     --color-text: var(--color-text-light);
@@ -24,7 +24,7 @@ body {
     color: var(--color-text);
 }
 
-/* Define the dark theme when body has .theme-dark class */
+/* Dark theme when body has .theme-dark class */
 body.theme-dark {
     --color-bg: var(--color-bg-dark);
     --color-text: var(--color-text-dark);

@@ -2,9 +2,10 @@
 img {
     max-width: 100%;
     height: auto;
+    display: block; /* Remove any unwanted spacing at the bottom */
 }
 
-/* For responsive image grids, a common feature in modern websites */
+/* For responsive image grids */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,17 @@ img {
 }
 
 .image-grid__item {
-    flex: 1 0 calc(33.333% - 2rem); /* 3-column grid with 1rem gap between */
+    flex: 1 0 calc(100% - 2rem); /* 1-column grid by default for mobile */
+
+    /* 2-column layout for tablets */
+    @media (min-width: 576px) {
+        flex: 1 0 calc(50% - 2rem);
+    }
+
+    /* 3-column layout for desktops */
+    @media (min-width: 768px) {
+        flex: 1 0 calc(33.333% - 2rem);
+    }
 }
 
 /* Ensure the aspect ratio of images is maintained */
@@ -20,7 +31,15 @@ img {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* for 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 by default */
+}
+
+.aspect-ratio--4-3 {
+    padding-bottom: 75%; /* 4:3 */
+}
+
+.aspect-ratio--1-1 {
+    padding-bottom: 100%; /* 1:1 */
 }
 
 .aspect-ratio__content {
@@ -35,8 +54,10 @@ img {
 .img-border {
     border: 1px solid #ddd;
     padding: 10px;
+    display: inline-block; /* To ensure border wraps the image properly */
 }
 
 .img-shadow {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block; /* To ensure shadow wraps the image properly */
 }

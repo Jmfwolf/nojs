@@ -1,10 +1,19 @@
 /* Embedded media (e.g., iframes from YouTube) */
 .embed {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio by default */
     height: 0;
     overflow: hidden;
     max-width: 100%;
+}
+
+/* Additional aspect ratios */
+.embed.aspect-4-3 {
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+}
+
+.embed.aspect-1-1 {
+    padding-bottom: 100%; /* 1:1 aspect ratio */
 }
 
 .embed iframe,

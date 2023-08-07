@@ -2,12 +2,14 @@
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    overflow-x: auto; /* Enables horizontal scrolling if the table overflows its container */
 }
 
 .table th,
 .table td {
     padding: 10px;
     border: 1px solid var(--color-light-gray);
+    transition: background-color 0.2s ease-in-out; /* Smoothens hover effect */
 }
 
 .table th {
@@ -26,4 +28,11 @@
 
 .table-hover tbody tr:hover {
     background-color: var(--color-light-gray);
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* Scroll horizontally when content overflows */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll for touch devices */
 }

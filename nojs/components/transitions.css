@@ -1,34 +1,33 @@
-/* Color transition */
+/* Base transition class */
+.transition {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
 .color-transition {
-    transition: color 0.3s ease-in-out;
+    transition-property: color;
 }
 
-/* Background color transition */
 .bg-color-transition {
-    transition: background-color 0.3s ease-in-out;
+    transition-property: background-color;
 }
 
-/* Border color transition */
 .border-color-transition {
-    transition: border-color 0.3s ease-in-out;
+    transition-property: border-color;
 }
 
-/* Transform transition */
 .transform-transition {
-    transition: transform 0.3s ease-in-out;
+    transition-property: transform;
 }
 
-/* Width transition */
 .width-transition {
-    transition: width 0.3s ease-in-out;
+    transition-property: width;
 }
 
-/* Height transition */
 .height-transition {
-    transition: height 0.3s ease-in-out;
+    transition-property: height;
 }
 
-/* All properties transition */
 .all-transition {
-    transition: all 0.3s ease-in-out;
+    transition-property: all;
 }

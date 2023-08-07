@@ -1,3 +1,7 @@
+:root {
+    --default-duration: 1s;
+}
+
 /* Fade in animation */
 @keyframes fade-in {
     0% {
@@ -8,13 +12,7 @@
     }
 }
 
-.fade-in {
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-/* Slide in from left animation */
+/* Slide in animations */
 @keyframes slide-in-left {
     0% {
         transform: translateX(-100%);
@@ -25,14 +23,6 @@
         opacity: 1;
     }
 }
-
-.slide-in-left {
-    animation-name: slide-in-left;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-/* Slide in from right animation */
 @keyframes slide-in-right {
     0% {
         transform: translateX(100%);
@@ -43,11 +33,25 @@
         opacity: 1;
     }
 }
-
-.slide-in-right {
-    animation-name: slide-in-right;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Rotate animation */
@@ -60,12 +64,6 @@
     }
 }
 
-.rotate {
-    animation-name: rotate;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
 /* Scale up animation */
 @keyframes scale-up {
     0% {
@@ -76,8 +74,52 @@
     }
 }
 
+/* Bounce animation */
+@keyframes bounce-in {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Animation Classes */
+.animation {
+    animation-fill-mode: both;
+    animation-duration: var(--default-duration);
+    animation-timing-function: ease-in-out;
+}
+
+.fade-in {
+    animation-name: fade-in;
+}
+
+.slide-in-left {
+    animation-name: slide-in-left;
+}
+.slide-in-right {
+    animation-name: slide-in-right;
+}
+.slide-in-top {
+    animation-name: slide-in-top;
+}
+.slide-in-bottom {
+    animation-name: slide-in-bottom;
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-duration: 2s; /* Since rotation might be longer */
+}
+
 .scale-up {
     animation-name: scale-up;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+}
+
+.bounce-in {
+    animation-name: bounce-in;
 }

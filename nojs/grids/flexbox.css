@@ -153,5 +153,63 @@
 .order-3 {
     order: 3;
 }
+/* Responsive Flexbox Modifiers */
 
-/* ...continue as necessary */
+/* Small devices */
+@media (max-width: 600px) {
+    .sm-flex { display: flex; }
+    .sm-flex-row { flex-direction: row; }
+    /* ... Add other modifiers as needed with `sm-` prefix */
+}
+
+/* Medium devices */
+@media (min-width: 601px) and (max-width: 900px) {
+    .md-flex { display: flex; }
+    .md-flex-row { flex-direction: row; }
+    /* ... Add other modifiers as needed with `md-` prefix */
+}
+
+/* Large devices */
+@media (min-width: 901px) {
+    .lg-flex { display: flex; }
+    .lg-flex-row { flex-direction: row; }
+    /* ... Add other modifiers as needed with `lg-` prefix */
+}
+
+/* Align self */
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+/* Gap utilities */
+.gap-sm {
+    gap: 0.5rem;
+}
+
+.gap-md {
+    gap: 1rem;
+}
+
+.gap-lg {
+    gap: 1.5rem;
+}
+
+.gap-xl {
+    gap: 2rem;
+}

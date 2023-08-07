@@ -1,14 +1,21 @@
+:root {
+    --navbar-bg: #f8f9fa;
+    --navbar-text-color: #333;
+    --navbar-padding: 1em;
+    --navbar-link-spacing: 1em;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-    background-color: #f8f9fa;
+    padding: var(--navbar-padding);
+    background-color: var(--navbar-bg);
 }
 
 .navbar__brand {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #333;
+    color: var(--navbar-text-color);
 }
 
 .navbar__list {
@@ -19,14 +26,35 @@
 }
 
 .navbar__item + .navbar__item {
-    margin-left: 1em;
+    margin-left: var(--navbar-link-spacing);
 }
 
 .navbar__link {
-    color: #333;
+    color: var(--navbar-text-color);
     text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;  /* Smooth transition for hover effect */
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus {   /* Added focus for accessibility */
     text-decoration: underline;
+}
+
+/* Responsiveness - Hide list items behind a menu on smaller screens */
+@media (max-width: 768px) {
+    .navbar__list {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar__item + .navbar__item {
+        margin-left: 0;
+        margin-top: var(--navbar-link-spacing);
+    }
+
+    /* If you want to show the list again (e.g., when a menu button is clicked), 
+    you can toggle a class (this will need JavaScript) */
+    .navbar__list.active {
+        display: flex;
+    }
 }
