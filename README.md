@@ -1,5 +1,3 @@
-Sure, I can help you update the README formatting:
-
 # NoJS CSS Framework
 
 NoJS CSS Framework is a minimalistic, BEM-formatted CSS framework that aims to deliver a rich, responsive, and animated UI experience without relying on JavaScript.
